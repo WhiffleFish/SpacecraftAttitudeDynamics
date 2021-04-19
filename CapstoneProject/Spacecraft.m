@@ -86,5 +86,8 @@ classdef Spacecraft
             p = HN*[obj.r;0;0];
         end
         
+        function x0 = X0(obj)
+            x0 = [obj.init_att;obj.init_rot];
+        end
     end
 end
